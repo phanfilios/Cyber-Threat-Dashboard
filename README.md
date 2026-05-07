@@ -19,6 +19,14 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 streamlit run src/visualization/app.py
+
+
+importante
+
+play
+
+cd "C:\Users\LENOVO\OneDrive\Desktop\Cyber Threat Dashboard"
+python -m src.pipeline
 ```
 
 If you only want to verify the logic:
