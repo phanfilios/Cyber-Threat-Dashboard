@@ -27,6 +27,10 @@ play
 
 cd "C:\Users\LENOVO\OneDrive\Desktop\Cyber Threat Dashboard"
 python -m src.pipeline
+
+
+
+python -m streamlit run src\visualization\app.py
 ```
 
 If you only want to verify the logic:
