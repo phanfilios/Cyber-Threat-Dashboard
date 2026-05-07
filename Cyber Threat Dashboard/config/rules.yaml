@@ -1,0 +1,63 @@
+rules:
+  - id: credential_pressure
+    name: Credential Pressure
+    event_type: login_failure
+    base_score: 35
+    mitre_tactic: Credential Access
+    mitre_technique: T1110 Brute Force
+    recommendation: Review VPN logs, lock affected accounts, enforce MFA, and inspect successful logins from the same source.
+    description: Repeated authentication failures may indicate brute force activity.
+
+  - id: reconnaissance
+    name: Reconnaissance
+    event_type: scan
+    base_score: 30
+    mitre_tactic: Reconnaissance
+    mitre_technique: T1595 Active Scanning
+    recommendation: Block noisy sources, confirm exposed services, and review attack surface changes.
+    description: Scanning activity can precede exploitation attempts.
+
+  - id: malware_containment
+    name: Malware Containment
+    event_type: malware
+    base_score: 70
+    mitre_tactic: Execution
+    mitre_technique: T1204 User Execution
+    recommendation: Isolate the endpoint, preserve evidence, and verify containment across similar hosts.
+    description: Malware events require immediate containment review.
+
+  - id: data_exposure
+    name: Data Exposure
+    event_type: exfiltration
+    base_score: 80
+    mitre_tactic: Exfiltration
+    mitre_technique: T1041 Exfiltration Over C2 Channel
+    recommendation: Validate transfer destination, suspend suspicious sessions, and check data access logs.
+    description: Possible data exfiltration needs rapid validation.
+
+  - id: privilege_drift
+    name: Privilege Drift
+    event_type: privilege_escalation
+    base_score: 65
+    mitre_tactic: Privilege Escalation
+    mitre_technique: T1078 Valid Accounts
+    recommendation: Review the account change, revoke unapproved grants, and inspect adjacent identity activity.
+    description: Unexpected privilege changes are high-impact identity risks.
+
+  - id: phishing_campaign
+    name: Phishing Campaign
+    event_type: phishing
+    base_score: 55
+    mitre_tactic: Initial Access
+    mitre_technique: T1566 Phishing
+    recommendation: Quarantine messages, identify clicked users, and rotate credentials where needed.
+    description: Phishing events can lead to credential theft or malware delivery.
+
+  - id: web_attack_blocked
+    name: Web Attack Blocked
+    event_type: waf_block
+    base_score: 25
+    mitre_tactic: Initial Access
+    mitre_technique: T1190 Exploit Public-Facing Application
+    recommendation: Review payloads, confirm WAF coverage, and patch exposed application paths.
+    description: Blocked application attacks still reveal attacker interest.

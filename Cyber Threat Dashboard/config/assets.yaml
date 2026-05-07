@@ -1,0 +1,42 @@
+assets:
+  vpn-gateway:
+    criticality: 5
+    owner: Security Operations
+    business_unit: Infrastructure
+    exposure: internet-facing
+
+  public-api:
+    criticality: 4
+    owner: Platform Engineering
+    business_unit: Digital Products
+    exposure: internet-facing
+
+  finance-workstation:
+    criticality: 4
+    owner: Finance IT
+    business_unit: Finance
+    exposure: internal
+
+  data-warehouse:
+    criticality: 5
+    owner: Data Platform
+    business_unit: Analytics
+    exposure: restricted
+
+  hr-laptop:
+    criticality: 3
+    owner: Corporate IT
+    business_unit: Human Resources
+    exposure: internal
+
+  domain-controller:
+    criticality: 5
+    owner: Identity Team
+    business_unit: Infrastructure
+    exposure: restricted
+
+  mail-gateway:
+    criticality: 4
+    owner: Messaging Team
+    business_unit: Infrastructure
+    exposure: internet-facing

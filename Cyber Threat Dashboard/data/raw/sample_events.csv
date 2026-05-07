@@ -1,0 +1,11 @@
+timestamp,source_ip,destination_ip,event_type,severity,asset,country,description
+2026-05-06T08:10:00Z,185.220.101.4,10.0.1.12,login_failure,medium,vpn-gateway,Netherlands,Repeated failed VPN authentication
+2026-05-06T08:15:00Z,185.220.101.4,10.0.1.12,login_failure,medium,vpn-gateway,Netherlands,Repeated failed VPN authentication
+2026-05-06T08:21:00Z,185.220.101.4,10.0.1.12,login_failure,high,vpn-gateway,Netherlands,Credential stuffing pattern
+2026-05-06T09:02:00Z,103.27.202.11,10.0.2.44,scan,medium,public-api,Singapore,Port scan against public API host
+2026-05-06T09:25:00Z,45.155.205.233,10.0.3.8,malware,critical,finance-workstation,Russia,Endpoint quarantined suspicious payload
+2026-05-06T10:03:00Z,198.51.100.7,10.0.4.20,policy_violation,low,hr-laptop,United States,Unapproved cloud storage upload
+2026-05-06T11:40:00Z,203.0.113.90,10.0.5.5,exfiltration,critical,data-warehouse,Unknown,Unusual outbound transfer volume
+2026-05-06T12:12:00Z,192.0.2.14,10.0.2.44,waf_block,medium,public-api,Brazil,Blocked SQL injection signature
+2026-05-06T12:44:00Z,172.16.88.2,10.0.6.13,privilege_escalation,high,domain-controller,Internal,Unexpected admin group modification
+2026-05-06T13:01:00Z,203.0.113.77,10.0.7.18,phishing,high,mail-gateway,Unknown,Phishing campaign delivered to executives
