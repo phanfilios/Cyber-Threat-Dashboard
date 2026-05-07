@@ -12,6 +12,13 @@ The project is intentionally small enough to understand, but structured like a r
 - an interactive Streamlit dashboard for threat operations
 - tests for the core analysis pipeline
 
+
+<img width="1834" height="978" alt="image" src="https://github.com/user-attachments/assets/67df8d2e-43ba-4f49-8d11-6b8ba2c53a61" />
+
+<img width="1863" height="871" alt="image" src="https://github.com/user-attachments/assets/d884ef56-deaf-49dd-8efd-9d4cc500a20b" />
+
+
+
 ## Quick Start
 
 ```powershell
@@ -31,6 +38,14 @@ python -m src.pipeline
 
 
 python -m streamlit run src\visualization\app.py
+
+
+finally
+
+
+http://localhost:8501
+
+
 ```
 
 If you only want to verify the logic:
